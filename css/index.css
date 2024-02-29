@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ----------------Navbar---------------- */
+nav {
+    /* background-color: antiquewhite; */
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+
+.nav-items {
+    display: flex;
+    gap: 5vw;
+    font-size: 1.2vw;
+    color: #808080;
+}
+.nav-items h5:hover {
+    color: #ff4500;
+    cursor: pointer;
+}
+
+.active-item {
+    color: #ff4500;
+}
+
+.mob-icon {
+    display: none;
+}
+
+@media (max-width: 1600px) {
+    nav {
+        padding: 0 4vw;
+    }
+    
+    .nav-items {
+        font-size: 1.6vw;
+    }
+}
+@media (max-width: 1400px) {
+    nav {
+        padding: 0 2vw;
+    }
+    
+    .nav-items {
+        font-size: 2vw;
+    }
+}
+@media (max-width: 900px) {
+    .nav-items {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 0 3vw;
+    }
+    nav [alt="logo"] {
+        width: 25vw;
+    }
+    nav [alt="actions"] {
+        display: none;
+    }
+
+    .mob-icon {
+        display: block;
+    }
+
+    .mob-icon i {
+        font-size: 7vw;
+        margin-left: 8px;
+    }
+}
+
+
+/* --------------Hero Section-------------- */
+.intro-section {
+    /* background-color: antiquewhite; */
+    width: 100%;
+    display: flex;
+    padding: 0 5vw;
+}
+
+.left-section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-section h3 {
+    font-size: 2.5vw;
+    font-weight: 400;
+    color: #808080;
+    padding: 5vw 0 0 0;
+}
+
+.left-section h3 img {
+    width: 3vw;
+}
+
+.left-section h1 {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    font-size: 5vw;
+}
+
+.sub-headlines {
+    line-height: 2;
+    padding: 2vw 5vw;
+}
+
+.sub-headline {
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.sub-headline img{
+    background-color: #ff4500;
+    width: 1.3vw;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.text {
+    font-size: 1vw;
+    width: 90%;
+    color: #808080;
+    margin: 1vw 0 4vw 0;
+}
+
+.action-btns .action-btn {
+    margin-right: 1.5vw;
+}
+
+.action-btn{
+    width: 12vw;
+    background-color: #ff4500;
+    color: #ffffff;
+    font-size: 1vw;
+    padding: 0.8vw 2vw;
+    border-radius: 2vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background-color: #ff5b1f;
+}
+
+.right-section {
+    /* background-color: aquamarine; */
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.headphone-div {
+    position: relative;
+}
+
+.discount {
+    width: 8vw;
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+}
+
+.discount-content {
+    position: absolute;
+    font-size: 1.1vw;
+    line-height: 1;
+    text-align: center;
+    color: #ffffff;
+    bottom: 21%;
+    left: 4%;
+}
+
+.headphone-div [alt="headphone"] {
+    width: 35vw;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.dot {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 1.5vw;
+}
+
+.dot:hover {
+    border: 1px solid #808080;
+    cursor: pointer;
+}
+
+.yellow-dot {
+    background-color: #ffdd00;
+}
+
+.tomato-dot {
+    background-color: #ff6347;
+}
+
+.black-dot {
+    background-color: #000000;
+}
+
+@media (max-width: 1200px) {
+    .intro-section {
+        display: flex;
+        flex-direction: column;
+        padding: 0 5vw;
+    }
+    
+    .left-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .left-section h3 {
+        font-size: 5vw;
+        font-weight: 400;
+        color: #808080;
+        padding: 3vw 0 0 0;
+    }
+    
+    .left-section h3 img {
+        width: 5vw;
+    }
+    
+    .left-section h1 {
+        font-family: "Fredoka", sans-serif;
+        font-weight: 600;
+        font-size: 8vw;
+    }
+    
+    .sub-headlines {
+        line-height: 2;
+        padding: 2vw 5vw;
+    }
+    
+    .sub-headline {
+        font-size: 3vw;
+        font-weight: 500;
+    }
+    
+    .sub-headline img{
+        width: 2vw;
+        border-radius: 50%;
+        padding: 8px;
+        margin-right: 10px;
+    }
+    
+    .text {
+        font-size: 2vw;
+        text-align: center;
+        width: 90%;
+        margin: 1vw 0 4vw 0;
+    }
+    
+    .action-btns .action-btn {
+        margin-right: 1.5vw;
+    }
+    
+    .action-btn{
+        width: 20vw;
+        font-size: 1.8vw;
+        padding: 1.3vw 4vw;
+        border-radius: 2vw;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    .right-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 5vw;
+    }
+    
+    .headphone-div {
+        position: relative;
+    }
+    
+    .discount {
+        width: 15vw;
+        position: absolute;
+        bottom: 15%;
+        left: 0;
+    }
+    
+    .discount-content {
+        position: absolute;
+        font-size: 2vw;
+        line-height: 1;
+        text-align: center;
+        color: #ffffff;
+        bottom: 22%;
+        left: 5%;
+    }
+    
+    .headphone-div [alt="headphone"] {
+        width: 60vw;
+    }
+    
+    .dots {
+        display: flex;
+        justify-content: center;
+        gap: 2vw;
+    }
+    
+    .dot {
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        margin-bottom: 1.5vw;
+    }
+    
+    .dot:hover {
+        border: 1px solid #808080;
+        cursor: pointer;
+    }
+    
+    .yellow-dot {
+        background-color: #ffdd00;
+    }
+    
+    .tomato-dot {
+        background-color: #ff6347;
+    }
+    
+    .black-dot {
+        background-color: #000000;
+    }
+}
+@media (max-width: 600px) {
+    .intro-section {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1vw;
+    }
+    
+    .left-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2vw;
+    }
+    
+    .left-section h3 {
+        font-size: 6vw;
+        font-weight: 400;
+        color: #808080;
+        padding: 3vw 0 0 0;
+    }
+    
+    .left-section h3 img {
+        width: 6vw;
+    }
+    
+    .left-section h1 {
+        font-family: "Fredoka", sans-serif;
+        font-weight: 600;
+        font-size: 15vw;
+        text-align: center;
+        line-height: 1;
+        padding-bottom: 6vw;
+    }
+    
+    .sub-headlines {
+        line-height: 2;
+        padding: 0 0;
+    }
+    
+    .sub-headline {
+        font-size: 5vw;
+        font-weight: 500;
+    }
+    
+    .sub-headline img{
+        width: 2vw;
+        border-radius: 50%;
+        padding: 8px;
+        margin-right: 10px;
+    }
+    
+    .text {
+        font-size: 3.4vw;
+        text-align: center;
+        width: 90%;
+        margin: 7vw 0 8vw 0;
+    }
+
+    .action-btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6vw;
+        width: 100%;
+    }
+    
+    .action-btn{
+        width: 60vw;
+        font-size: 4vw;
+        padding: 3vw 6vw;
+        border-radius: 2vw;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    .right-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 5vw;
+        margin-top: 15vw;
+    }
+    
+    .headphone-div {
+        position: relative;
+        padding: 3vw;
+    }
+    
+    .discount {
+        width: 22vw;
+        position: absolute;
+        bottom: 15%;
+        left: 0;
+    }
+    
+    .discount-content {
+        position: absolute;
+        font-size: 3vw;
+        line-height: 1;
+        text-align: center;
+        color: #ffffff;
+        bottom: 22%;
+        left: 6%;
+    }
+    
+    .headphone-div [alt="headphone"] {
+        width: 80vw;
+        border-radius: 8px;
+    }
+    
+    .dots {
+        display: flex;
+        justify-content: center;
+        gap: 7vw;
+        padding: 10px 0;
+    }
+    
+    .dot {
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        margin-bottom: 1.5vw;
+    }
+}
+
